@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vente Privé Bastien</string>
+    <string name="apikey">f2eddb1e5939ab42cff1f5c2d730c828c3425249dd9630307780c2c2a96ebbed</string>
+    <string name="api_url">https://api.gilt.com/v1/sales/</string>
+    <string name="descrption_title">Description</string>
+    <string name="home_title">Home</string>
+    <string name="detail_title">Detail</string>
+</resources>

@@ -1,0 +1,66 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context="com.calone.vpgilt.views.DetailSaleFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/detail_sale_image"
+            android:layout_width="@dimen/big_imageview_display"
+            android:layout_height="@dimen/big_imageview_display"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            app:civ_border_color="@color/colorSecondaryDark"
+            app:civ_border_width="@dimen/default_circle_border"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/detail_sale_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/default_tilte_text_size"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/detail_sale_image" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sale_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:gravity="center_horizontal"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/default_text_size"
+            app:layout_constraintTop_toBottomOf="@id/detail_sale_name" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sale_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_margin"
+            android:text="@string/descrption_title"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/sale_date" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sale_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/medium_text_size"
+            app:layout_constraintTop_toBottomOf="@+id/sale_description_title" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
